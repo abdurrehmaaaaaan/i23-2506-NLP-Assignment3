@@ -48,13 +48,13 @@ The notebook loads 13,000 samples from each category (39,000 total).
 Open the notebook in Jupyter and run all cells **from top to bottom** in order. Do not skip or re-run cells out of order as later cells depend on variables and saved files from earlier ones.
 
 ```bash
-jupyter notebook NLP_ASSIGNMENT3.ipynb
+jupyter notebook i23-2506-Assignment3.ipynb
 ```
 
 Or with JupyterLab:
 
 ```bash
-jupyter lab NLP_ASSIGNMENT3.ipynb
+jupyter lab i23-2506-Assignment3.ipynb
 ```
 
 The notebook is divided into three sequential parts. Each part must complete fully before the next begins, as Parts B and C load files saved by the previous parts.
@@ -65,9 +65,9 @@ The notebook is divided into three sequential parts. Each part must complete ful
 
 The notebook was developed and run on **CPU** (`Device: cpu`). No GPU is required. Training times on CPU are approximately:
 
-- Part A encoder (3 epochs, 27k samples): ~5–10 minutes
+- Part A encoder (3 epochs, 27k samples): ~5–10 minutes per epoch
 - Part B embedding generation (27k + 5.8k samples): ~2–3 minutes
-- Part C decoder (5 epochs): ~10–15 minutes
+- Part C decoder (5 epochs): ~10–15 minutes per epoch
 
 If a CUDA-capable GPU is available, the notebook will detect and use it automatically via `torch.device('cuda' if torch.cuda.is_available() else 'cpu')`.
 
